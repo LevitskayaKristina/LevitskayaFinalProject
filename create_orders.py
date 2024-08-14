@@ -5,7 +5,7 @@ import data
 def create_orders():
    current_order_body = data.order_body.copy()
    current_order_body ["firstName"] = "Ван"
-   track = sender_stand_request.post_orders(current_order_body)c
+   track = sender_stand_request.post_orders(current_order_body)
    return str(track.json()["track"])
 
 def positive_assert():
@@ -14,8 +14,8 @@ def positive_assert():
     current_params["t"] = track
     response = sender_stand_request.get_orders(current_params)
     assert response.status_code == 200
-    print(response.status_code)
-    print(current_params)
+    print(" Заказ с номером " + create_orders() + " выполнен ")
+
 
 def test_order():
     positive_assert()

@@ -1,3 +1,3 @@
-URL_SERVICE = "https://331a5d1c-4fe8-4d95-80f4-2c8e88c84b9b.serverhub.praktikum-services.ru/"
+URL_SERVICE = "https://a76a41d1-9a11-4411-b272-04aa32820080.serverhub.praktikum-services.ru/"
 CREATE_ORDERS = "/api/v1/orders"
 GET_ORDERS = "/api/v1/orders/track"
